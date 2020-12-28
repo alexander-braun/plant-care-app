@@ -1,1 +1,6 @@
-<p>plant-gallery works!</p>
+<div>
+  <div *ngFor="let plant of plants" (click)="onSelect(plant.id)">
+    {{ plant.id }}
+    {{ plant.name }}
+  </div>
+</div>
