@@ -1,6 +1,12 @@
-<div>
-  <div *ngFor="let plant of plants" (click)="onSelect(plant.id)">
-    {{ plant.id }}
-    {{ plant.name }}
+<div class="plantgrid">
+  <div *ngFor="let plant of plants" (click)="onSelect(plant.id)" class="plant">
+    <div class="plant-text">
+      {{ plant.id }}
+      {{ plant.name }}
+    </div>
+    <img [src]="plant.imgUrl" />
+  </div>
+  <div class="add plant">
+    <div class="plant-text" style="background-color: black">Add Plant</div>
   </div>
 </div>

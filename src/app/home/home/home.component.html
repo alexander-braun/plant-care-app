@@ -1,1 +1,16 @@
-<p>home works!</p>
+<div id="customers">
+  <div class="head">
+    <div class="plant-col">Plant</div>
+    <div *ngFor="let day of daysArr" class="day">{{ day + 1 }}</div>
+  </div>
+  <div *ngFor="let plant of plants" class="head">
+    <div class="plant-col">{{ plant.name }}</div>
+    <div
+      *ngFor="let day of daysArr"
+      (click)="log(day + 1, plant)"
+      class="plant-day"
+    >
+      {{ plant.watered }}
+    </div>
+  </div>
+</div>

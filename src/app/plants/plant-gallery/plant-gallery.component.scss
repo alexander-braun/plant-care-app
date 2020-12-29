@@ -1,0 +1,27 @@
+.plantgrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.plant {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px;
+}
+
+.add.plant {
+  max-width: 200px;
+  min-width: 200px;
+  background-color: black;
+}
+
+.plant img {
+  max-width: 200px;
+}
+
+.plant-text {
+  position: absolute;
+  color: white;
+}

@@ -1,0 +1,22 @@
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plant-col {
+  width: 150px;
+}
+
+.day {
+  min-width: 20px;
+  margin: 1px;
+  border: 1px solid transparent;
+}
+
+.plant-day {
+  border: 1px solid black;
+  margin: 1px;
+  background-color: white;
+  min-width: 20px;
+}
